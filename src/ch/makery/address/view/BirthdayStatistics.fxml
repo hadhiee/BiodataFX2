@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="620.0" styleClass="mainFxmlClass" stylesheets="@fxml.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.BirthdayStatisticsController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <BarChart fx:id="barChart" legendVisible="false" prefHeight="450.0" prefWidth="620.0" title="Bulan Kelahiran" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <xAxis>
+        <CategoryAxis side="BOTTOM" fx:id="xAxis">
+          <categories>
+            <FXCollections fx:factory="observableArrayList" />
+          </categories>
+        </CategoryAxis>
+      </xAxis>
+      <yAxis>
+        <NumberAxis side="LEFT" upperBound="40.0" />
+      </yAxis>
+    </BarChart>
+  </children>
+</AnchorPane>
